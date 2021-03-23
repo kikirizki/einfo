@@ -2,7 +2,7 @@ package ta.andy.einfo;
 
 import android.app.*;
 import android.os.*;
-import android.support.v4.app.*;
+import androidx.core.app.*;
 
 public class MainActivity extends Activity 
 {
@@ -17,7 +17,7 @@ public class MainActivity extends Activity
 			.setSmallIcon(R.drawable.ic_launcher)
 			.setContentTitle("Title ")
 			.setCategory(NotificationCompat.CATEGORY_SOCIAL)
-			.setContentText("Konten Informasi")
+			.setContentText("Now using android X")
 			.setPriority(NotificationCompat.PRIORITY_HIGH);
 			
 		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
