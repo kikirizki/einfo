@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167958559180",
+    "project_id": "fcmpushnotification-d799e",
+    "storage_bucket": "fcmpushnotification-d799e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167958559180:android:8ea31313419386d7a18569",
+        "android_client_info": {
+          "package_name": "ta.andy.einfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRhMQbBSfNOeV30FPvXvXluRftuxeitFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -246,6 +246,12 @@ containing a value of this type.
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int default_web_client_id=0x7f040003;
+        public static final int gcm_defaultSenderId=0x7f040005;
+        public static final int google_api_key=0x7f040006;
+        public static final int google_app_id=0x7f040004;
+        public static final int google_crash_reporting_api_key=0x7f040007;
+        public static final int google_storage_bucket=0x7f040008;
         public static final int hello_world=0x7f040002;
         public static final int status_bar_notification_info_overflow=0x7f040000;
     }

@@ -15,8 +15,8 @@ public class MainActivity extends Activity
 		// constructor requires that you provide a channel ID. This is required for compatibility with Android 8.0 (API level 26) and higher, but is ignored by older versions.
 		NotificationCompat.Builder builder = new NotificationCompat.Builder(this )
 			.setSmallIcon(R.drawable.ic_launcher)
-			.setContentTitle("Berita ")
-			.setContentText("Konten berita")
+			.setContentTitle("Memek ")
+			.setContentText("Konten Informasi")
 			.setPriority(NotificationCompat.PRIORITY_DEFAULT);
 			
 		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
