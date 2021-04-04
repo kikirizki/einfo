@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		android:src="@drawable/logo"
+		android:id="@+id/login_logo"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+
+	/>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="32dp"
+		android:id="@+id/input_pegawai"
+		android:hint="ID Karyawan"
+		app:layout_constraintTop_toBottomOf="@+id/login_logo"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+	/>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="32dp"
+		android:id="@+id/namalengkap_pegawai"
+		android:hint="Nama Lengkap"
+		
+		app:layout_constraintTop_toBottomOf="@+id/input_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="32dp"
+		android:id="@+id/nomortelpon_pegawai"
+		android:hint="Nomor Telpon"
+		android:inputType="numberDecimal" 
+		app:layout_constraintTop_toBottomOf="@+id/namalengkap_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="32dp"
+		android:id="@+id/password_pegawai"
+		android:hint="Password"
+		android:inputType="textPassword"
+		app:layout_constraintTop_toBottomOf="@+id/nomortelpon_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="128dp"
+		android:id="@+id/tombol_register"
+		android:text="Register"
+		app:layout_constraintTop_toBottomOf="@+id/password_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+
+	
+</androidx.constraintlayout.widget.ConstraintLayout>
+

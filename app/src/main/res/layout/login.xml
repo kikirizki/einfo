@@ -55,7 +55,8 @@
 		android:id="@+id/tombol_register"
 		android:text="Register"
 		android:textColor="#08ABFF"
-		
+		android:onClick="go2register"
+		android:clickable="true"
 		app:layout_constraintTop_toBottomOf="@+id/tombol_login"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"/>

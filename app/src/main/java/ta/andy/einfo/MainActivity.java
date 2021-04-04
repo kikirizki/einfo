@@ -1,8 +1,9 @@
 package ta.andy.einfo;
 
 import android.app.*;
+import android.content.*;
 import android.os.*;
-import androidx.core.app.*;
+import android.view.*;
 
 public class MainActivity extends Activity 
 {
@@ -10,7 +11,11 @@ public class MainActivity extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.login);
 		
     }
+	public void go2register(View view){
+		Intent intent = new Intent(this,RegisterActivity.class);
+	    startActivity(intent);
+		}
 }

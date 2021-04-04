@@ -3480,7 +3480,7 @@ containing a value of this type.
         public static final int center_vertical=0x7f0b0075;
         public static final int chains=0x7f0b004f;
         public static final int checkbox=0x7f0b0093;
-        public static final int checked=0x7f0b00bf;
+        public static final int checked=0x7f0b00c1;
         public static final int chronometer=0x7f0b00bb;
         public static final int collapseActionView=0x7f0b0071;
         public static final int content=0x7f0b008f;
@@ -3524,14 +3524,16 @@ containing a value of this type.
         public static final int message=0x7f0b00a9;
         public static final int middle=0x7f0b0069;
         public static final int multiply=0x7f0b0061;
+        public static final int namalengkap_pegawai=0x7f0b00bf;
         public static final int never=0x7f0b0073;
+        public static final int nomortelpon_pegawai=0x7f0b00c0;
         public static final int none=0x7f0b0039;
         public static final int normal=0x7f0b0057;
         public static final int notification_background=0x7f0b00b9;
         public static final int notification_main_column=0x7f0b00b5;
         public static final int notification_main_column_container=0x7f0b00b4;
-        public static final int off=0x7f0b00c2;
-        public static final int on=0x7f0b00c1;
+        public static final int off=0x7f0b00c4;
+        public static final int on=0x7f0b00c3;
         public static final int packed=0x7f0b004c;
         public static final int parent=0x7f0b0048;
         public static final int parentPanel=0x7f0b0081;
@@ -3594,7 +3596,7 @@ containing a value of this type.
         public static final int tombol_register=0x7f0b00af;
         public static final int top=0x7f0b0045;
         public static final int topPanel=0x7f0b008a;
-        public static final int unchecked=0x7f0b00c0;
+        public static final int unchecked=0x7f0b00c2;
         public static final int uniform=0x7f0b0066;
         public static final int up=0x7f0b0036;
         public static final int useLogo=0x7f0b005f;
@@ -3650,7 +3652,7 @@ containing a value of this type.
         public static final int abc_select_dialog_material=0x7f03001a;
         public static final int abc_tooltip=0x7f03001b;
         public static final int custom_dialog=0x7f03001c;
-        public static final int main=0x7f03001d;
+        public static final int login=0x7f03001d;
         public static final int notification=0x7f03001e;
         public static final int notification_action=0x7f03001f;
         public static final int notification_action_tombstone=0x7f030020;
@@ -3658,10 +3660,11 @@ containing a value of this type.
         public static final int notification_template_icon_group=0x7f030022;
         public static final int notification_template_part_chronometer=0x7f030023;
         public static final int notification_template_part_time=0x7f030024;
-        public static final int select_dialog_item_material=0x7f030025;
-        public static final int select_dialog_multichoice_material=0x7f030026;
-        public static final int select_dialog_singlechoice_material=0x7f030027;
-        public static final int support_simple_spinner_dropdown_item=0x7f030028;
+        public static final int register=0x7f030025;
+        public static final int select_dialog_item_material=0x7f030026;
+        public static final int select_dialog_multichoice_material=0x7f030027;
+        public static final int select_dialog_singlechoice_material=0x7f030028;
+        public static final int support_simple_spinner_dropdown_item=0x7f030029;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f070014;
