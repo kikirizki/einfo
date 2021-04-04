@@ -1,45 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
 
-<androidx.constraintlayout.widget.ConstraintLayout 
+<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		android:src="@drawable/logo"
+		android:id="@+id/login_logo"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		
+		/>
+ <EditText
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:layout_marginHorizontal="32dp"
+	 android:id="@+id/input_pegawai"
+	 android:hint="ID Karyawan"
+	 app:layout_constraintTop_toBottomOf="@+id/login_logo"
+	 app:layout_constraintLeft_toLeftOf="parent"
+	 app:layout_constraintRight_toRightOf="parent"
+	 />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="32dp"
+		android:id="@+id/password_pegawai"
+		android:hint="Password"
+		android:inputType="textPassword"
+		app:layout_constraintTop_toBottomOf="@+id/input_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="128dp"
+		android:id="@+id/tombol_login"
+		android:text="Login"
+		app:layout_constraintTop_toBottomOf="@+id/password_pegawai"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="128dp"
+		android:id="@+id/tombol_register"
+		android:text="Register"
+		android:textColor="#08ABFF"
+		
+		app:layout_constraintTop_toBottomOf="@+id/tombol_login"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
-    xmlns:tools="http://schemas.android.com/tools"
-
-    android:layout_width="match_parent"
-
-    android:layout_height="match_parent"
-
-    tools:context=".MainActivity"> 
-
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-
-        android:padding="20dp"
-
-        android:text="Welcome to GeeksforGeeks!"
-
-        android:textColor="#006600"
-
-        android:textSize="40dp"
-
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-
-        app:layout_constraintRight_toRightOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent" /> 
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout> 

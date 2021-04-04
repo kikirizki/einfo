@@ -1,48 +1,28 @@
 package ta.andy.einfo;
 
-import android.app.NotificationChannel; 
-
-import android.app.NotificationManager; 
-
-import android.app.PendingIntent; 
-
-import android.content.Context; 
-
-import android.content.Intent; 
-
-import android.os.Build; 
-
-import android.widget.RemoteViews; 
-
-
-
-import androidx.core.app.NotificationCompat; 
-
-
-
-import com.google.firebase.messaging.FirebaseMessagingService; 
-
-import com.google.firebase.messaging.RemoteMessage; 
+import android.app.*;
+import android.content.*;
+import android.os.*;
+import android.widget.*;
+import androidx.core.app.*;
+import com.google.firebase.messaging.*; 
 
 
 
 public class FirebaseMessageReceiver 
 
-extends FirebaseMessagingService { 
-
-
-
+extends FirebaseMessagingService
+{ 
     // Override onMessageReceived() method to extract the 
-
     // title and 
-
-    // body from the message passed in FCM 
+	// body from the message passed in FCM 
 
     @Override
 
     public void
 
-    onMessageReceived(RemoteMessage remoteMessage) { 
+    onMessageReceived(RemoteMessage remoteMessage)
+	{ 
 
         // First case when notifications are received via 
 
@@ -72,7 +52,8 @@ extends FirebaseMessagingService {
 
         // received. 
 
-        if (remoteMessage.getNotification() != null) { 
+        if (remoteMessage.getNotification() != null)
+		{ 
 
             // Since the notification is received directly from 
 
@@ -81,10 +62,8 @@ extends FirebaseMessagingService {
             // directly as below. 
 
             showNotification( 
-
-				remoteMessage.getNotification().getTitle(), 
-
-				remoteMessage.getNotification().getBody()); 
+                 remoteMessage.getNotification().getTitle(), 
+                 remoteMessage.getNotification().getBody()); 
 
         } 
 
@@ -98,7 +77,8 @@ extends FirebaseMessagingService {
 
     private RemoteViews getCustomDesign(String title, 
 
-                                        String message) { 
+                                        String message)
+	{ 
 
         RemoteViews remoteViews = new RemoteViews( 
 
@@ -124,7 +104,8 @@ extends FirebaseMessagingService {
 
     public void showNotification(String title, 
 
-                                 String message) { 
+                                 String message)
+	{ 
 
         // Pass the intent to switch to the MainActivity 
 
@@ -192,7 +173,8 @@ extends FirebaseMessagingService {
 
         if (Build.VERSION.SDK_INT 
 
-			>= Build.VERSION_CODES.JELLY_BEAN) { 
+			>= Build.VERSION_CODES.JELLY_BEAN)
+		{ 
 
             builder = builder.setContent( 
 
@@ -204,13 +186,14 @@ extends FirebaseMessagingService {
 
         // layout is set as follows 
 
-        else { 
+        else
+		{ 
 
             builder = builder.setContentTitle(title) 
 
 				.setContentText(message) 
 
-				.setSmallIcon(R.drawable.ic_launcher); 
+				.setSmallIcon(R.drawable.notification_bg); 
 
         } 
 
@@ -230,7 +213,8 @@ extends FirebaseMessagingService {
 
         if (Build.VERSION.SDK_INT 
 
-			>= Build.VERSION_CODES.O) { 
+			>= Build.VERSION_CODES.O)
+		{ 
 
             NotificationChannel notificationChannel 
 
