@@ -14,6 +14,10 @@ public class MainActivity extends Activity
         setContentView(R.layout.login);
 		
     }
+	public void do_login(View view){
+		Intent intent = new Intent(this,ProfileActivity.class);
+	    startActivity(intent);
+	}
 	public void go2register(View view){
 		Intent intent = new Intent(this,RegisterActivity.class);
 	    startActivity(intent);

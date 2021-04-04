@@ -38,6 +38,9 @@
 		<activity
 			android:name=".RegisterActivity"/>
 
+		<activity
+			android:name=".ProfileActivity"/>
+
 		<service
 			android:name=".FirebaseMessageReceiver">
 

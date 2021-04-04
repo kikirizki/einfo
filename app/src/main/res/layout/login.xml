@@ -44,6 +44,7 @@
 		android:layout_marginHorizontal="128dp"
 		android:id="@+id/tombol_login"
 		android:text="Login"
+		android:onClick="do_login"
 		app:layout_constraintTop_toBottomOf="@+id/password_pegawai"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"/>
