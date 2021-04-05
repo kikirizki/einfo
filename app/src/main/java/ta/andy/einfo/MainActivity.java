@@ -14,10 +14,12 @@ public class MainActivity extends Activity
         setContentView(R.layout.login);
 		
     }
+	//Fungsi untuk pindah ke halaman login
 	public void do_login(View view){
 		Intent intent = new Intent(this,ProfileActivity.class);
 	    startActivity(intent);
 	}
+	//Fungsi untuk pindah ke register
 	public void go2register(View view){
 		Intent intent = new Intent(this,RegisterActivity.class);
 	    startActivity(intent);

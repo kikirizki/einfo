@@ -13,9 +13,9 @@ public class FirebaseMessageReceiver
 
 extends FirebaseMessagingService
 { 
-    // Override onMessageReceived() method to extract the 
-    // title and 
-	// body from the message passed in FCM 
+    // Fungsi onMessageReceived() akan diajalankan
+    // saat menerima pesan dari FCM
+	
 
     @Override
 
@@ -24,33 +24,9 @@ extends FirebaseMessagingService
     onMessageReceived(RemoteMessage remoteMessage)
 	{ 
 
-        // First case when notifications are received via 
+   
 
-        // data event 
-
-        // Here, 'title' and 'message' are the assumed names 
-
-        // of JSON 
-
-        // attributes. Since here we do not have any data 
-
-        // payload, This section is commented out. It is 
-
-        // here only for reference purposes. 
-
-        /*if(remoteMessage.getData().size()>0){ 
-
-		 showNotification(remoteMessage.getData().get("title"), 
-
-		 remoteMessage.getData().get("message")); 
-
-		 }*/
-
-
-
-        // Second case when notification payload is 
-
-        // received. 
+        // Jika notifikasi kosong. 
 
         if (remoteMessage.getNotification() != null)
 		{ 
@@ -100,34 +76,32 @@ extends FirebaseMessagingService
 
 
 
-    // Method to display the notifications 
+    // Fungsi untuk menampilkan notifikasi
 
     public void showNotification(String title, 
 
                                  String message)
 	{ 
 
-        // Pass the intent to switch to the MainActivity 
+        // Intent untuk berpindah activity
 
         Intent intent 
 
 			= new Intent(this, MainActivity.class); 
 
-        // Assign channel ID 
+        // Memasukan ID channel
 
         String channel_id = "notification_channel"; 
 
-        // Here FLAG_ACTIVITY_CLEAR_TOP flag is set to clear 
+        //  FLAG_ACTIVITY_CLEAR_TOP digunakan
 
-        // the activities present in the activity stack, 
-
-        // on the top of the Activity that is to be launched 
+        // untuk menghapus activity teratas pada stack
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
 
-        // Pass the intent to PendingIntent to start the 
+        // Mengirim intent ke PendingInteratuntuk memulai
 
-        // next Activity 
+       // activity selanjutnya
 
         PendingIntent pendingIntent 
 
@@ -139,9 +113,9 @@ extends FirebaseMessagingService
 
 
 
-        // Create a Builder object using NotificationCompat 
+        //Membuat objek Builder menggunakan NotificationCompat 
 
-        // class. This will allow control over all the flags 
+        
 
         NotificationCompat.Builder builder 
 
@@ -165,11 +139,11 @@ extends FirebaseMessagingService
 
 
 
-        // A customized design for the notification can be 
+        
 
-        // set only for Android versions 4.1 and above. Thus 
+        // hanya untuk Android versions 4.1hatau lebih tinggi  
 
-        // condition for the same is checked here. 
+      
 
         if (Build.VERSION.SDK_INT 
 
@@ -180,11 +154,7 @@ extends FirebaseMessagingService
 
 				getCustomDesign(title, message)); 
 
-        } // If Android Version is lower than Jelly Beans, 
-
-        // customized layout cannot be used and thus the 
-
-        // layout is set as follows 
+        }
 
         else
 		{ 
@@ -197,19 +167,16 @@ extends FirebaseMessagingService
 
         } 
 
-        // Create an object of NotificationManager class to 
+        // Membuat NotificationManager 
 
-        // notify the 
-
-        // user of events that happen in the background. 
-
+      
         NotificationManager notificationManager 
 
 			= (NotificationManager) getSystemService( 
 
 			Context.NOTIFICATION_SERVICE); 
 
-        // Check if the Android Version is greater than Oreo 
+        // Cek apakah versi android lebih besar dari Oreo 
 
         if (Build.VERSION.SDK_INT 
 
