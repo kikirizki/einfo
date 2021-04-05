@@ -87,7 +87,7 @@ extends FirebaseMessagingService
 
         Intent intent 
 
-			= new Intent(this, MainActivity.class); 
+			= new Intent(this, LoginActivity.class); 
 
         // Memasukan ID channel
 
