@@ -25,7 +25,9 @@
 		<activity
 			android:name=".ProfileActivity"
 		/>
-
+		<activity
+			android:name=".JadwalActivity"
+		/>
 		<service android:name=".FirebaseMessageReceiver"> 
 
             <intent-filter> 
