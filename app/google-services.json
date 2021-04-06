@@ -7,6 +7,122 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:167958559180:android:7fd6190408d7ab22a18569",
+        "android_client_info": {
+          "package_name": "andi.skripsi.informasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRhMQbBSfNOeV30FPvXvXluRftuxeitFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167958559180:android:b7c872219a570ea1a18569",
+        "android_client_info": {
+          "package_name": "com.com.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRhMQbBSfNOeV30FPvXvXluRftuxeitFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167958559180:android:fc0f0485c893a594a18569",
+        "android_client_info": {
+          "package_name": "m.m.m"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRhMQbBSfNOeV30FPvXvXluRftuxeitFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167958559180:android:0d398bf1473017aca18569",
+        "android_client_info": {
+          "package_name": "ta.andy.einfm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRhMQbBSfNOeV30FPvXvXluRftuxeitFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167958559180-chrrsplds0arlthcf9q7aqgeprjjbbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:167958559180:android:8ea31313419386d7a18569",
         "android_client_info": {
           "package_name": "ta.andy.einfo"
